@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+html {
+    background-color: #fefefe;
+    color: #2a3744;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+body {
+    width: 100%;
+    min-height:100vh;
+}
+
+.global-nav__header {
+    background: #212a34;
+    position: relative;
+    max-width: 960px;
+    height: 200px;
+    margin: 0 auto;
+}
+

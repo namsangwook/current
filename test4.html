@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <title>test</title>
+    <style>
+        body {font-family: Arial;}
+        .advanced {
+            width:300px; padding: 3px;
+            boarder:1px solid #ccc;
+        }
+    </style>
+    <script type="application/javascript" src="https://code.jquery.com/jquery-2.2.3.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('<input type="button" id="advanced-search" value="Advanced Search">')
+                    .insertBefore('div.advanced');
+            $('div.advanced').hide();
+            $('#advanced-search').bind('click', function(){
+               $('.advanced').slideToggle();
+            });
+
+
+        });
+    </script>
+</head>
+<body>
+    <div id="search">
+        <h1>johnny's Superstore</h1>
+        <input type="text" width="60"/>
+        <input type="submit" value="search"/>
+        <div class="advanced">
+            <input type="radio" name="category"/>Clothing<br/>
+            <input type="radio" name="category"/>Electronics<br/>
+            <input type="checkbox" name="sale"/>Clearance Only<br/>
+
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <title>test</title>
+    <style>
+        body {font-family: Arial;}
+        ul#nav {margin:10px 0 10px; padding: 0; list-style-type: none;}
+        ul#nav li {float:left; width:30px;}
+        ul#nav a {
+            padding:5px;
+            background:#05609A;
+            color:#fff;text-decoration: none;
+        }
+        ul#nav a.active {background:#B4F114;cursor:default;}
+        ul#altText {display: none;}
+        .slide-image {
+            width:400px; height: 300px; overflow: hidden;
+            border: 2px solid #05609A;
+        }
+    </style>
+    <script type="application/javascript" src="https://code.jquery.com/jquery-2.2.3.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#nav a').bind('click', function(evt){
+                evt.preventDefault();
+
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            jQuery Images Galore.
+        </h1>
+        <div id="slide-image">
+            <img src="images/ansel_adams1.jpg" alt="Thousans of sheeps are heading east.">
+        </div>
+        <ul id="nav">
+            <li><a rel="1" class="active" href="5-0.5.php?id=1">1</a></li>
+            <li><a rel="2" href="5-0.5.php?id=2">2</a></li>
+            <li><a rel="3" href="5-0.5.php?id=3">3</a></li>
+            <li><a rel="4" href="5-0.5.php?id=4">4</a></li>
+            <li><a rel="5" href="5-0.5.php?id=5">5</a></li>
+        </ul>
+        <ul id="altText">
+            <li>Thousans of sheeps are heading east.</li>
+            <li>Thousans of sheeps are heading east.</li>
+            <li>Thousans of sheeps are heading east.</li>
+            <li>Thousans of sheeps are heading east.</li>
+            <li>Thousans of sheeps are heading east.</li>
+
+        </ul>
+
+    </div>
+</body>
+</html>

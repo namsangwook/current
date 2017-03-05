@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <title>test</title>
+    <style>
+        #nav {
+            margin: 0;
+            padding: 7px 6px 0;
+            background: #7d7d7d;
+            line-height: 100%;
+            border-radius: 2em;
+                -webkit-border-radius: 2em;
+                -moz-border-radius: 2em;
+            box-shadow: 0 1px 3px rgba(0,0,0,.4);
+                -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+                -moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+            background: -webkit-gradient(linear, left top, left bottom, from(darkgray), to(rgb(122, 122, 122)));
+            background: -moz-linear-gradient(top, darkgray, rgb(122, 122, 122));
+        }
+
+        #nav li {
+            display: inline-block;
+        }
+
+        #nav .current a, #nav li:hover > a {
+            background: #666;
+            color: #444;
+            border-top: solid 1px #f8f8f8;
+            box-shadow: 0 1px 1px rgba(0,0,0,.2);
+                -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.2);
+                -moz-box-shadow: 0 1px 1px rgba(0,0,0,.2);
+
+        }
+
+        #nav ul {
+            display: none;
+            margin: 0;
+            padding: 0;
+            width: 185px;
+        }
+    </style>
+    <script type="application/javascript" src="https://code.jquery.com/jquery-2.2.3.js"></script>
+    <script>
+        $(document).ready(function(){
+
+        });
+    </script>
+</head>
+<body>
+    <ul id="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <ul>
+            <li><a href="#">Consulting</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Development</a></li>
+        </ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</body>
+</html>

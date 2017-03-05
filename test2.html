@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <title>test</title>
+    <style>
+        .recipe {display: none}
+    </style>
+    <script type="application/javascript" src="https://code.jquery.com/jquery-2.2.3.js"></script>
+    <script>
+        $(document).ready(function(){
+//           alert('test');
+            $('.recipe-name').hover(
+                    function() {
+                        console.log('hover in');
+                    },
+                    function() {
+                        console.log('hover out');
+                    }
+            );
+            $('.recipe-name').bind('click', function (){
+                console.log('click');
+                $('.recipe').toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <a href="#" class="recipe-name">Key Lime Pie</a>
+    <dic class="recipe">
+        Key lime pie is an sldfsldkjfsldjkfslkdfs
+        flskjdflsjdflsdjflksjdlfjsldkfjskjdf
+    </dic>
+</body>
+</html>

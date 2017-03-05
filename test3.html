@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <title>test</title>
+    <style>
+        .bg {background:#ccc;}
+    </style>
+    <script type="application/javascript" src="https://code.jquery.com/jquery-2.2.3.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            function bgBlink() {
+                $('#recipe-name').toggleClass('bg');
+            }
+            $('#recipe').hide();
+            $('#recipe-name')
+                    .bind('click', function(){
+                        $('#recipe').toggle(500, function () {
+                            blink = window.setInterval(bgBlink, 250);
+                            window.setTimeout(
+                                    'window.clearTimeout(blink)', 1000
+                            );
+                        })
+                    });
+        });
+    </script>
+</head>
+<body>
+    <h5 id="recipe-name">Key Lime Pie</h5>
+    <dic id="recipe">
+        Key lime pie is an sldfsldkjfsldjkfslkdfs
+        flskjdflsjdflsdjflksjdlfjsldkfjskjdf
+    </dic>
+</body>
+</html>
